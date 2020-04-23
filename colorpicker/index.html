@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Colors</title>
+
+    <link rel="stylesheet" href="assets/libs/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/libs/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+
+    <link rel="shortcut icon" href="assets/images/icon.png" type="image/x-icon">
+
+    <meta name="theme-color" content="#0b0d18">
+
+</head>
+
+<body>
+
+    <!-- navigation -->
+    <div class="navbar bg-dark navbar-dark">
+        <div class="navbar-brand text-white">
+            <img src="assets/images/icon.png" width="30" height="30" class="d-inline-block align-top" alt=""> Color Picker
+        </div>
+        <div class="form-inline">
+            <a href="https://github.com/dhruvilxcode/colors-web" target="_blank" class="btn">
+                <i class="fab fa-github fa-2x" style="color: #FFF;"></i>
+            </a>
+        </div>
+    </div>
+    <!-- navigation -->
+
+    <!-- colors -->
+    <div class="container">
+        <div class="row" id="colors-section">
+
+        </div>
+    </div>
+    <!-- colors -->
+
+    <div class="color-modal">
+
+    </div>
+
+
+    <!-- footer -->
+
+    <footer class="footer m-3">
+        <div class="container" style="text-align: center;">
+            <span class="text-muted">Made with <span style="color: red;">❤</span> by <a href="https://github.com/dhruvilxcode/">Dhruvil</a>  </span>
+        </div>
+    </footer>
+    <!-- footer -->
+
+
+    <!-- scripts -->
+    <script src="assets/libs/jquery/jquery.js"></script>
+    <script src="assets/libs/clipboardjs/clipboard.min.js"></script>
+    <script>
+        $(document).ready(function () {
+
+            $.getJSON("colors.json", function (data) {
+                var items = [];
+
+                $.each(data.colors, function (key, val) {
+                    items.push(`<div data-clipboard-text="${val.color}" class="col-6 col-sm-4 color" style="background-color: ${val.color}" > 
+                        <span class='color-copy'>Copy ${val.color}</span>
+                        </div>`);
+                });
+
+                $("#colors-section").html(items);
+
+                var clipboard = new ClipboardJS('.color');
+                clipboard.on('success', function (e) {
+                    console.info('Color:', e.text);
+
+
+                    $(".color-modal").css({
+                        "backgroundColor": e.text
+                    });
+
+                    $(".color-modal").slideDown(500, function () {
+                        $(".color-modal").slideUp();
+                    });
+
+                    e.clearSelection();
+                });
+
+                clipboard.on('error', function (e) {
+                    console.error('Action:', e.action);
+                    console.error('Trigger:', e.trigger);
+                });
+
+            });
+
+        });
+
+        function copyColor() {
+
+        }
+    </script>
+
+</body>
+
+</html>
