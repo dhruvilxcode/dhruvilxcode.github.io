@@ -7,4 +7,4 @@ Amazing Color Pallete
 
 [https://colors-web.surge.sh/](https://dhruvilxcode.github.io/colorpicker/)
 
-![](https://github.com/dhruvilxcode/colors-web/blob/master/Screenshot%202020-02-25%20at%2012.06.24%20AM.png?raw=true)
+![](https://github.com/dhruvilxcode/colors-web/blob/master/preview.png?raw=true)
