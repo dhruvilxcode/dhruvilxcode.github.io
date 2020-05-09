@@ -15,6 +15,10 @@
 
     <meta name="theme-color" content="#0b0d18">
 
+    <meta name="description"
+        content="Color picker gives you an amazing list of handpicked colors. use this color palette and make your design beautiful.">
+    <meta name="keywords" content="color picker, color palette, colors, ui colors, uicolors">
+
 </head>
 
 <body>
@@ -22,7 +26,8 @@
     <!-- navigation -->
     <div class="navbar bg-dark navbar-dark">
         <div class="navbar-brand text-white">
-            <img src="assets/images/icon.png" width="30" height="30" class="d-inline-block align-top" alt=""> Color Picker
+            <img src="assets/images/icon.png" width="30" height="30" class="d-inline-block align-top" alt=""> Color
+            Picker
         </div>
         <div class="form-inline">
             <a href="https://github.com/dhruvilxcode/dhruvilxcode.github.io/" target="_blank" class="btn">
@@ -49,7 +54,8 @@
 
     <footer class="footer m-3">
         <div class="container" style="text-align: center;">
-            <span class="text-muted">Made with <span style="color: red;">❤</span> by <a href="https://github.com/dhruvilxcode/">Dhruvil</a>  </span>
+            <span class="text-muted">Made with <span style="color: red;">❤</span> by <a
+                    href="https://github.com/dhruvilxcode/">Dhruvil</a> </span>
         </div>
     </footer>
     <!-- footer -->
@@ -59,6 +65,22 @@
     <script src="assets/libs/jquery/jquery.js"></script>
     <script src="assets/libs/clipboardjs/clipboard.min.js"></script>
     <script>
+        function shuffle(array) {
+            var currentIndex = array.length,
+                temporaryValue, randomIndex;
+
+            while (0 !== currentIndex) {
+
+                randomIndex = Math.floor(Math.random() * currentIndex);
+                currentIndex -= 1;
+
+                temporaryValue = array[currentIndex];
+                array[currentIndex] = array[randomIndex];
+                array[randomIndex] = temporaryValue;
+            }
+
+            return array;
+        }
         $(document).ready(function () {
 
             $.getJSON("colors.json", function (data) {
@@ -69,6 +91,8 @@
                         <span class='color-copy'>Copy ${val.color}</span>
                         </div>`);
                 });
+
+                items = shuffle(items)
 
                 $("#colors-section").html(items);
 
