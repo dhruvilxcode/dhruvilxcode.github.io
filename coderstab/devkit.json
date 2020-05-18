@@ -1,0 +1,146 @@
+{
+    "typography": [
+        {
+            "title": "Google Fonts",
+            "description": "Free, open-source fonts optimized for the web.",
+            "url": "https://www.google.com/fonts"
+        },
+        {
+            "title": "Font Combination",
+            "description": "Find the perfect font combo for your next project.",
+            "url": "https://www.canva.com/font-combinations/"
+        },
+        {
+            "title": "Font Squirrel",
+            "description": "Free Font Utopia, 100% free for commercial use.",
+            "url": "https://www.fontsquirrel.com/"
+        },
+        {
+            "title": "Beautiful Web Type",
+            "description": "A showcase of the best typefaces from the Google web fonts directory.",
+            "url": "https://beautifulwebtype.com/"
+        }
+    ],
+    "icons": [
+        {
+            "title": "Flat Icon",
+            "description": "The largest database of free icons available in PNG, SVG, EPS, PSD and BASE 64 formats",
+            "url": "http://www.flaticon.com/"
+        },
+        {
+            "title": "Icons8",
+            "description": "Free Flat Icons, in any format, size and color",
+            "url": "https://icons8.com/"
+        },
+        {
+            "title": "Material Icons",
+            "description": "Free open-source glyphs by Google.",
+            "url": "http://google.github.io/material-design-icons/"
+        },
+        {
+            "title": "FontAwesome",
+            "description": "The iconic font and CSS toolkit.",
+            "url": "https://fontawesome.com/"
+        }
+    ],
+    "color pickers": [
+        {
+            "title": "Adobe Color CC",
+            "description": " Create color schemes with the color wheel or browse thousands of color combinations from the Kuler community.",
+            "url": "https://color.adobe.com/create/color-wheel"
+        },
+        {
+            "title": "Material Pallete",
+            "description": "Choose your favorite colors and get your Material Design palette generated and downloadable.",
+            "url": "http://www.materialpalette.com/"
+        },
+        {
+            "title": "UI Gradients",
+            "description": "Set of Gradients combination, copy css, hex, export png. Lots of gradients are available to choose with nice UI.",
+            "url": "https://uigradients.com/"
+        },
+        {
+            "title": "Colors Web",
+            "description": "Best handpicked colors, including material colors, copy the hex, create awesome Design with colors.",
+            "url": "https://dhruvilxcode.github.io/colorpicker/"
+        }
+    ],
+    "stock photos": [
+        {
+            "title": "Pexels",
+            "description": "Free stock photos you can use everywhere.",
+            "url": "https://www.pexels.com/"
+        },
+        {
+            "title": "Unsplash",
+            "description": "Do-whatever-you-want high-resolution photos.",
+            "url": "https://unsplash.com/"
+        },
+        {
+            "title": "Pixabay",
+            "description": "Free images and videos you can use anywhere.",
+            "url": "https://pixabay.com/"
+        },
+        {
+            "title": "AI Generated Photos",
+            "description": "No worry about copyright, AI Generated Photos of Humans",
+            "url": "https://generated.photos/"
+        }
+    ],
+    "illustration 1": [
+        {
+            "title": "unDraw",
+            "description": "Open-source illustrations for every project you can imagine and create.",
+            "url": "https://undraw.co/"
+        },
+        {
+            "title": "humaaans",
+            "description": "Mix-&-match illustrations of people with a design library.",
+            "url": "https://www.humaaans.com/"
+        },
+        {
+            "title": "Draw Kit",
+            "description": " DrawKit is a collection of free, beautiful, customisable MIT licensed illustrations in two styles, to use on your next website, app, or project.",
+            "url": "https://www.drawkit.io/"
+        }
+    ],
+    "illustration 2": [
+        {
+            "title": "ManyPixels",
+            "description": "Illustration Gallery.",
+            "url": "https://www.manypixels.co/gallery"
+        },
+        {
+            "title": "MixKit",
+            "description": "COMPLETELY FREE HD VIDEO & ART FOR YOU TO USE, ANYWHERE",
+            "url": "https://mixkit.co/"
+        },
+        {
+            "title": "OpenDoodle",
+            "description": " A free set of sketchy illustrations.",
+            "url": "https://www.opendoodles.com/"
+        }
+    ],
+    "image related": [
+        {
+            "title": "TinyPNG",
+            "description": "Optimize your images with a perfect balance in quality and file size.",
+            "url": "https://tinypng.com/"
+        },
+        {
+            "title": "Canva",
+            "description": "Canva makes design simple for everyone.",
+            "url": "https://www.canva.com/"
+        },
+        {
+            "title": "Pixlr",
+            "description": "A free online image editor.",
+            "url": "https://pixlr.com/"
+        },
+        {
+            "title": "BigJPG",
+            "description": "Maximize quality and resolution of the picture.",
+            "url": "https://bigjpg.com/"
+        }
+    ]
+}
