@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    cursor: none;
+}
+
+body {
+    color: #fff;
+    background-color: #000;
+}
+
+::selection {
+    background: #E83F3F;
+}
+
+
+.cursor {
+    width: 48px;
+    height: 48px;
+    border-radius: 100%;
+    border: 1px solid rgb(73, 73, 73);
+    transition: all 200ms ease-out;
+    position: fixed;
+    pointer-events: none;
+    left: 0;
+    top: 0;
+    transform: translate(calc(-50% + 15px), -50%);
+}
+
+.cursor2 {
+    width: 8px;
+    height: 8px;
+    border-radius: 100%;
+    background-color: rgb(73, 73, 73);
+    opacity: .3;
+    position: fixed;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    transition: width .3s, height .3s, opacity .3s;
+}
+
+.hover {
+    background-color: rgb(67, 67, 67);
+    opacity: 0.3;
+}
+
+.cursorinnerhover {
+    width: 50px;
+    height: 50px;
+    opacity: .5;
+}
+
+
+
+h1 {
+    font-size: 6rem;
+    font-weight: 900;
+    position: relative;
+    transition: 200ms all;
+}
+
+h1:hover::after {
+    content: attr(data-text);
+    position: absolute;
+    font-size: 12rem;
+    color: transparent;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #fff;
+    opacity: 0.1;
+    z-index: -1;
+    left: -3rem;
+    top: -3rem;
+}
+
+
+
+/* mobile, tablet */
+@media screen and (max-width: 768px) {
+    * {
+        cursor: default;
+    }
+    .cursor {display: none;}
+    .cursor2 {display: none;}
+}
