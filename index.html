@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,19 +12,139 @@
 
     <link rel="stylesheet" href="css/styles.css">
 </head>
+
 <body>
-    
+
     <div class="cursor"></div>
     <div class="cursor2"></div>
 
 
-    <h1 data-text="WE">WE</h1>
-    <h1 data-text="DO">DO</h1>
-    <h1 data-text="APPS">APPS</h1>
-    <h1 data-text="WEBSITE">WEBSITE</h1>
-    <h1 data-text="UI/UX">UI/UX</h1>
+    <div class="nav-full-screen" id="navFullScreen">
+        <a href="#home" onclick="closeFullScreenNav()" class="nav-link">HOME</a>
+        <a href="#portfolio" onclick="closeFullScreenNav()" class="nav-link">WORK</a>
+        <a href="#about" onclick="closeFullScreenNav()" class="nav-link">ABOUT</a>
+        <a href="#contact" onclick="closeFullScreenNav()" class="nav-link">CONTACT</a>
+
+        <button class="close" onclick="closeFullScreenNav()"><img src="./assets/icons/close.svg" alt="close"></button>
+    </div>
+
+    <!-- navbar -->
+    <nav class="navbar">
+        <img class="navbar-logo" src="./assets/dhruvil-logo.svg" alt="dhruvil logo">
+        <div class="nav-links">
+            <a href="#home" class="nav-link">HOME</a>
+            <a href="#portfolio" class="nav-link">WORK</a>
+            <a href="#about" class="nav-link">ABOUT</a>
+            <a href="#contact" class="nav-link">CONTACT</a>
+        </div>
+        <button class="nav-link-btn" onclick="openFullScreenNav()"><img src="./assets/icons/menu.svg" alt="menu"></button>
+    </nav>
+    <!-- navbar -->
+
+
+    <!-- introduction to skills -->
+    <div class="section-hero" id="home">
+        <h1>Hi 👋🏻 I'm Dhruvil</h1>
+        <h1>I MAKE</h1>
+        
+        <h1 class="hero-skill-heading t-gradient1" data-text="APPS">APPS</h1>
+        <h1 class="hero-skill-heading t-gradient2" data-text="WEBSITE">WEBSITE</h1>
+        <h1 class="hero-skill-heading t-gradient3" data-text="UI/UX">UI/UX</h1>
+    </div>
+    <!-- introduction to skills -->
+
+
+    <!-- section: technologies -->
+    <div class="section-technologies" id="tech">
+        <div class="section-headings">
+            <h1 class="heading-stroke-only">Technologies</h1>
+            <h1>We use</h1>
+        </div>
+
+        <div class="row">
+            <div class="col"><img class="tech-icon-img" src="./assets/icons/react.svg" alt="img"></div>
+            <div class="col"><img class="tech-icon-img" src="./assets/icons/vue.svg" alt="img"></div>
+            <div class="col"><img class="tech-icon-img" src="./assets/icons/flutter.svg" alt="img"></div>
+            <div class="col"><img class="tech-icon-img" src="./assets/icons/react_native.svg" alt="img"></div>
+            <div class="col"><img class="tech-icon-img" src="./assets/icons/electron.svg" alt="img"></div>
+        </div>
+
+        <div class="row mt-80">
+            <div class="col"><img src="./assets/icons/nextjs.svg" alt="img" class="tech-icon-img"></div>
+            <div class="col"><img src="./assets/icons/nuxtjs.svg" alt="img" class="tech-icon-img"></div>
+            <div class="col"><img src="./assets/icons/nodejs.svg" alt="img" class="tech-icon-img"></div>
+            <div class="col"><img src="./assets/icons/tailwind.svg" alt="img" class="tech-icon-img"></div>
+        </div>
+
+        <div class="row mt-80">
+            <div class="col"><img src="./assets/icons/postgresql.svg" alt="img" class="tech-icon-img"></div>
+            <div class="col"><img src="./assets/icons/mongodb.svg" alt="img" class="tech-icon-img"></div>
+        </div>
+
+        <div class="row mt-80">
+            <div class="col"><img src="./assets/icons/aws.svg" alt="img" class="tech-icon-img"></div>
+            <div class="col"><img src="./assets/icons/googlecloud.svg" alt="img" class="tech-icon-img"></div>
+            <div class="col"><img src="./assets/icons/firebase.svg" alt="img" class="tech-icon-img"></div>
+        </div>
+
+        <div class="row mt-80">
+            <div class="col"><img src="./assets/icons/sketch.svg" alt="img" class="tech-icon-img"></div>
+            <div class="col"><img src="./assets/icons/figma.svg" alt="img" class="tech-icon-img"></div>
+        </div>
+
+        <div class="row mt-80">
+            <div class="col"><img src="./assets/icons/xd.svg" alt="img" class="tech-icon-img"></div>
+            <div class="col"><img src="./assets/icons/photoshop.svg" alt="img" class="tech-icon-img"></div>
+            <div class="col"><img src="./assets/icons/illustrator.svg" alt="img" class="tech-icon-img"></div>
+            <div class="col"><img src="./assets/icons/premierepro.svg" alt="img" class="tech-icon-img"></div>
+            <div class="col"><img src="./assets/icons/indesign.svg" alt="img" class="tech-icon-img"></div>
+        </div>
+    </div>
+    <!-- section: technologies -->
+
+
+    <!-- section: portfolio -->
+    <div class="section-portfolio" id="portfolio">
+        <div class="section-headings">
+            <h1 class="heading-stroke-only">Work</h1>
+            <h1>Portfolio</h1>
+        </div>
+
+        <a href="#" data-text="MORE" class="link-more">MORE</a>
+    </div>
+    <!-- section: portfolio -->
+
+
+    <!-- section: contact -->
+    <div class="section-contact" id="contact">
+        <div class="section-headings">
+            <h1 class="heading-stroke-only">Let's</h1>
+            <h1>Build</h1>
+        </div>
+
+        <div class="section-contact-links">
+            <a class="contact-link" href="mailto:">
+                <img src="./assets/icons/mail.svg" alt="icon">
+                myemail@email.com
+            </a>
+            <a class="contact-link" href="tel:"><img src="./assets/icons/call.svg" alt="icon"> +91 12345 67890</a>
+            <a class="contact-link" href="http://maps.google.com/"><img src="./assets/icons/location.svg" alt="icon"> 404, 4th Floor, CG Road, Ahmedabad.</a>
+        </div>
+    </div>
+    <!-- section: contact -->
+
+
+
+    <!-- section: footer -->
+    <footer class="footer">
+        <img src="./assets/dhruvil-logo.svg" alt="dhruvil-logo" class="footer-logo">
+        <p>&copy; Copyright by Dhruvil Patel <span id="currentYear">2022</span></p>
+        <div></div>
+    </footer>
+    <!-- section: footer -->
 
 
     <script src="./js/script.js"></script>
 </body>
+
 </html>
