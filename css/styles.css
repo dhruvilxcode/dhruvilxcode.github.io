@@ -360,6 +360,24 @@ body {
         left: 0;
     }
 }
+
+.nav-full-screen .social-links {
+    margin-top: 50px;
+    margin-left: 100px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.nav-full-screen .social-link {
+    text-decoration: none;
+    color: #fff;
+    outline: none;
+}
+.nav-full-screen .social-link svg {
+    fill: #fff;
+    width: 24px;
+    height: 24px;
+}
 /* full screen navigation */
 
 
@@ -520,6 +538,10 @@ body {
     .nav-full-screen .nav-link {
         font-size: 2rem;
         display: block;
+        margin-top: 30px;
+        margin-left: 20px;
+    }
+    .nav-full-screen .social-links {
         margin-top: 30px;
         margin-left: 20px;
     }
