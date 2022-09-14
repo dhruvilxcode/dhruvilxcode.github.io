@@ -211,8 +211,19 @@ body {
     text-decoration: none;
     background: #333;
     width: 250px;
-    height: 300px;
     border-radius: 40px;
+    padding: 20px;
+}
+.portfolio-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+.portfolio-card .portfolio-card-details  h4 {
+    color: #fff;
+    font-weight: 400;
 }
 /* section: portfolio */
 
@@ -498,7 +509,7 @@ body {
     }
     .portfolio-card {
         width: 100%;
-        height: 500px;
+        padding: 20px 0;
     }
     /* section: portfolio */
     
