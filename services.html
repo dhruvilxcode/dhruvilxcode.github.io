@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script async src="https://js.stripe.com/v3/buy-button.js"></script>
+    <title>Freelance Services | Dhruvilxcode</title>
+    <meta name="description" content="Freelance Service, App Development, Full Stack Web Apps, Product Design.">
+
+
+    <!-- Facebook Meta Tags -->
+    <meta property="og:type" content="profile">
+    <meta property="og:title" content="Freelance Services | Dhruvil Patel - Full Stack Developer & Product Designer">
+    <meta property="og:url" content="https://dhruvilxcode.com/services.html">
+    <meta property="og:image" content="https://dhruvilxcode.com/assets/open_graph.jpeg">
+    <meta property="og:description"
+        content="Dhruvil Patel, i am Software Engineer, Coder, Designer, Full Stack Developer.">
+    <meta property="profile:first_name" content="Dhruvil">
+    <meta property="profile:last_name" content="Patel">
+    <meta property="profile:username" content="dhruvilxcode">
+
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta property="twitter:domain" content="dhruvilxcode.com">
+    <meta name="twitter:creator" content="@dhruvilxcode" />
+    <meta property="twitter:url" content="http://dhruvilxcode.com/services.html">
+    <meta name="twitter:title" content="Freelance Services | Dhruvil Patel">
+    <meta name="twitter:description"
+        content="Dhruvil Patel, i am Software Engineer, Coder, Designer, Full Stack Developer.">
+    <meta name="twitter:image" content="https://dhruvilxcode.com/assets/open_graph.jpeg">
+
+
+
+
+    <link rel="shortcut icon" href="./assets/dhruvil-logo-favicon.svg" type="image/svg">
+
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap');
+
+
+        * {
+            padding: 0;
+            margin: 0;
+            font-family: 'Inter', sans-serif;
+
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+
+        .link-container {
+            width: 50%;
+            margin: 40px auto;
+
+        }
+
+        .flist-container {
+            width: 50%;
+            margin: 20px auto;
+            background-color: #fff;
+            color: #000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .flist-item {
+            /* box-shadow: 5px 5px 30px  rgba(0, 0, 0, 0.1); */
+            border: 1px solid #efefef;
+            background-color: #fff;
+            padding: 20px 30px;
+            border-radius: 16px;
+            width: 30%;
+            height: 50px;
+            position: relative;
+        }
+
+        .flist-number {
+            color: #88888821;
+            font-size: 60px;
+            font-weight: 700;
+            position: absolute;
+            z-index: 0;
+            bottom: 0px;
+            right: 20px;
+        }
+
+        .flist-title {
+            font-size: 24px;
+            z-index: 9999;
+        }
+
+        .page-heading {
+            background-color: #111;
+            color: #fff;
+            width: 50%;
+            margin: auto;
+            padding: 40px 60px;
+        }
+
+        @media screen and (max-width: 768px) {
+            .link-container {
+                width: 100%;
+                margin: 10px auto;
+            }
+
+            .flist-container {
+                width: 100%;
+                margin: 20px auto;
+                background-color: #fff;
+                color: #000;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-wrap: wrap;
+                gap: 20px;
+            }
+
+            .flist-item {
+                /* box-shadow: 5px 5px 30px  rgba(0, 0, 0, 0.1); */
+                border: 1px solid #efefef;
+                background-color: #fff;
+                padding: 20px 30px;
+                border-radius: 16px;
+                width: 30%;
+                height: 50px;
+                position: relative;
+            }
+
+            .flist-number {
+                color: #88888821;
+                font-size: 50px;
+                z-index: 0;
+                bottom: 0px;
+                right: 20px;
+            }
+
+            .flist-title {
+                font-size: 18px;
+            }
+
+            .page-heading {
+                width: 100%;
+                padding: 20px 40px;
+                display: flex;
+                align-items: center;
+                gap: 20px
+            }
+
+            .page-heading h1 {
+                margin-top: 0px !important;
+            }
+
+            .page-heading img {
+                height: 32px !important;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <div class="page-heading">
+        <img src="./assets/dhruvil-logo.svg" alt="dhruvilxcode"
+            style="height: 48px;object-fit: contain;display: block;">
+        <h1 style="margin-top: 30px;">Freelance Services</h1>
+    </div>
+
+
+    <div class="flist-container">
+        <div class="flist-item">
+            <p class="flist-number">#1</p>
+            <p class="flist-title">App Development</p>
+        </div>
+        <div class="flist-item">
+            <p class="flist-number">#2</p>
+            <p class="flist-title">Full Stack Web Apps</p>
+        </div>
+        <div class="flist-item">
+            <p class="flist-number">#3</p>
+            <p class="flist-title">Product Design</p>
+        </div>
+        <div class="flist-item">
+            <p class="flist-number">#4</p>
+            <p class="flist-title">DevOps</p>
+        </div>
+        <div class="flist-item">
+            <p class="flist-number">#5</p>
+            <p class="flist-title">Desktop App Development</p>
+        </div>
+        <div class="flist-item">
+            <p class="flist-number">#6</p>
+            <p class="flist-title">Flutter App Developer</p>
+        </div>
+        <div class="flist-item">
+            <p class="flist-number">#7</p>
+            <p class="flist-title">React Native Developer</p>
+        </div>
+        <div class="flist-item">
+            <p class="flist-number">#8</p>
+            <p class="flist-title">NextJS & React Developer</p>
+        </div>
+
+
+    </div>
+    <div class="link-container">
+        <a style="display: block; border-radius: 16px; color: #fff; background-color: #2f38f4; padding: 12px 20px; text-align: center; margin: 20px;text-decoration: none;"
+            href="https://buy.stripe.com/14k7tJeyfeXBbZu5kl">Buy</a>
+
+        <a style="display: block;color: #888; font-size: 12px; text-align: center;text-decoration: none;" href="mailto:mail@dhruvilxcode.com">Contact here for any inquires: <b>mail@dhruvilxcode.com</b></a>
+
+        <p style="margin-top: 8px;color: #808080;font-size: 12px; text-align: center;">Payments are powered by Stripe</p>
+    </div>
+
+
+</body>
+
+</html>
